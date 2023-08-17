@@ -1,0 +1,18 @@
+---
+const { color, id } = Astro.props;
+const textColor = `text-${color}`;
+---
+
+<section
+  class="landing-section"
+  data-header-color={color}
+  id={id}
+>
+  <div>
+    <footer>
+      <slot name="footer" />
+    </footer>
+  </div>
+
+ 
+</section>
